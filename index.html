@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Information about a personal encrypted photo and video backup utility.">
+  <title>Immich Encrypted Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a class="brand" href="index.html">Immich Encrypted Backup</a><nav aria-label="Main"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header>
+  <main>
+    <p class="eyebrow">Personal backup utility</p>
+    <h1>Encrypted recovery copies,<br>stored in the owner’s Drive.</h1>
+    <p class="lead">Immich Encrypted Backup is a private utility for backing up the operator’s own photos, videos, companion files and recovery metadata to the operator’s Google Drive account.</p>
+    <section class="cards" aria-label="How the utility works">
+      <article><h2>Encrypt on the computer</h2><p>Restic encrypts backup contents, filenames and recovery metadata before upload. The encryption password stays on the operator’s computer.</p></article>
+      <article><h2>Upload changes</h2><p>Restic and rclone upload new or changed data and reuse previously stored content. Recovery points are kept until the operator chooses to remove them.</p></article>
+      <article><h2>Limit Drive access</h2><p>The utility requests Google’s <code>drive.file</code> permission to manage the backup files and folders it creates. It does not request access to Gmail, contacts or calendars.</p></article>
+    </section>
+    <section><h2>About this website</h2><p>These pages describe the utility and its data practices for Google authorization. They provide no access to backups, media, credentials or server administration. The utility is for personal use and is not a public storage service or an official Immich or Google product.</p><p>Read the <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of use</a> before authorizing the utility.</p></section>
+    <section><h2>Operator and support</h2><p>The application is operated by the Google account owner who authorizes it. For support, use the application’s support contact displayed on Google’s authorization screen.</p></section>
+  </main>
+  <footer><span>Personal-use application · Updated 27 October 2026</span><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></footer>
+</body>
+</html>
